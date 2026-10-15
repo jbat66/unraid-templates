@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <Name>Layerling</Name>
+  <Repository>ghcr.io/henmedia/layerling:latest</Repository>
+  <Registry>https://github.com/henmedia/layerling/pkgs/container/layerling</Registry>
+  <Network>bridge</Network>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Project>https://github.com/henmedia/layerling</Project>
+  <!-- Replace these URLs with your public template repository URLs. -->
+  <Support>https://github.com/jbat66/unraid-templates/issues</Support>
+  <ReadMe>https://raw.githubusercontent.com/jbat66/unraid-templates/main/README.md</ReadMe>
+  <Overview>Browser-based 3D CAD for 3D printing. Build with shapes, cut holes, round edges, and export models for printing. No account required. Includes persistent shared project storage so devices on your network can access server-saved designs. Browser-saved designs remain on each device until moved to the server folder. Open the WebUI and select On the server to use shared storage.</Overview>
+  <Category>Productivity:</Category>
+  <ExtraSearchTerms>CAD 3D printing modeling design STL STEP</ExtraSearchTerms>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/jbat66/unraid-templates/main/templates/layerling.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/henmedia/layerling/main/apps/web/public/favicon.ico</Icon>
+  <License>AGPL-3.0</License>
+  <!-- Run as Unraid nobody:users so a normal writable appdata folder can be used. -->
+  <ExtraParams>--user=99:100</ExtraParams>
+  <Config Name="WebUI Port" Target="3000" Default="3000" Mode="tcp" Description="Host port for the Layerling web interface. Change if already in use." Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Shared Projects" Target="/shared-projects" Default="/mnt/user/appdata/layerling/projects" Mode="rw" Description="Persistent server-saved designs. This host directory must be writable by UID 99 and GID 100. Browser-only designs are stored separately in each browser." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/layerling/projects</Config>
+  <Config Name="Shared Projects Container Directory" Target="LAYERLING_SHARED_PROJECTS_DIR" Default="/shared-projects" Description="Must match the container path of the Shared Projects mapping. Normally leave unchanged." Type="Variable" Display="advanced" Required="true" Mask="false">/shared-projects</Config>
+</Container>
