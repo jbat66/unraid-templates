@@ -1,5 +1,9 @@
 # Layerling for Unraid
 
+<p align="center">
+  <img src="docs/media/screenshot-en.png" width="763" alt="layerling in the browser">
+</p>
+
 Community-maintained Docker template for [Layerling](https://layerling.com/).
 The application and image come from [henmedia/layerling](https://github.com/henmedia/layerling).
 This repository supplies installation metadata and does not build the image.
