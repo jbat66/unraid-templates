@@ -4,6 +4,9 @@
   <img src="docs/media/screenshot-en.png" width="763" alt="layerling in the browser">
 </p>
 
+
+Use this Docker if you want to save your CAD drawings in a central location, have more than one person access the same drawings, or just want to be completely independent of the internet. Otherwise you can just use the website for [Layerling](https://layerling.com/). It does all the same things, but all your drawings will save inside of your browser.
+
 Community-maintained Docker template for [Layerling](https://layerling.com/).
 The application and image come from [henmedia/layerling](https://github.com/henmedia/layerling).
 This repository supplies installation metadata and does not build the image.
