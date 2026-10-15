@@ -10,7 +10,16 @@
   <!-- Replace these URLs with your public template repository URLs. -->
   <Support>https://github.com/jbat66/unraid-templates/issues</Support>
   <ReadMe>https://raw.githubusercontent.com/jbat66/unraid-templates/main/README.md</ReadMe>
-  <Overview>Browser-based 3D CAD for 3D printing. Build with shapes, cut holes, round edges, and export models for printing. No account required. Includes persistent shared project storage so devices on your network can access server-saved designs. Browser-saved designs remain on each device until moved to the server folder. Open the WebUI and select On the server to use shared storage.</Overview>
+  <Overview>Easy 3D CAD for 3D printing&#13;
+  &#13;
+  Drop a shape, cut a hole, round an edge, print it. In your browser, with no account and no CAD background. &#13;
+  &#13;
+  Who It Is For;&#13;
+  You own a 3D printer. You want a part that fits something, not a career in CAD. layerling works the way you already think: put a shape on the plate, drag it to size, turn a second shape into a hole, group the two, export, print. There is nothing to learn before you start and nothing to sign up for &#x2013; open the page and build. Your designs stay in your own browser: no account, no cloud, nothing uploaded anywhere.&#13;
+  &#13;
+  Coming From Tinkercad;&#13;
+  layerling sits a step beyond Tinkercad towards Fusion 360: it is operated the same way, so you will recognise everything &#x2013; the plate, the shapes, solids and holes, group and ungroup, bundle, Alt-drag for a copy &#x2013; but it does not stop where Tinkercad does. Things you have been missing are waiting for you.
+  </Overview>
   <Category>Productivity:</Category>
   <ExtraSearchTerms>CAD 3D printing modeling design STL STEP</ExtraSearchTerms>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
