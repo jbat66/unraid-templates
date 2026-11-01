@@ -7,18 +7,6 @@ Community Applications templates for Layerling and Prusa Print Monitor. This rep
 | Prusa Print Monitor | [prusa-print-monitor.xml](templates/prusa-print-monitor.xml) | [Prusa-Print-Monitor](https://github.com/jbat66/Prusa-Print-Monitor) | [Support discussion](https://github.com/jbat66/Prusa-Print-Monitor/discussions/1) |
 | Layerling | [layerling.xml](templates/layerling.xml) | [henmedia/layerling](https://github.com/henmedia/layerling) | [Template issues](https://github.com/jbat66/unraid-templates/issues) |
 
-## Community Apps submission
-
-Use this existing repository (`https://github.com/jbat66/unraid-templates`) in the [Community Apps submission portal](https://ca.unraid.net/submissions). Validate and scan it to pick up new or updated templates; do not register the application code repository as a second template repository. The root `ca_profile.xml` describes both applications and `LICENSE` contains the template repository license.
-
-The Prusa template's canonical URL is:
-
-```text
-https://raw.githubusercontent.com/jbat66/unraid-templates/main/templates/prusa-print-monitor.xml
-```
-
-Run `python tools/validate_templates.py` before pushing template changes. GitHub Actions runs the same validation automatically.
-
 ## Prusa Print Monitor
 
 A PrusaLink printer dashboard with status, remaining time, filament-change countdowns, optional sound alerts and optional RTSP/HTTP camera viewing. The [application README](https://github.com/jbat66/Prusa-Print-Monitor#readme) covers printer credentials, all settings, sound setup and upgrades.
