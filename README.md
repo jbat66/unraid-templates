@@ -1,8 +1,25 @@
 # Layerling for Unraid
 
+<p align="center">
+  <img src="docs/media/screenshot-en.png" width="763" alt="layerling in the browser">
+</p>
+
+
+Use this Docker if you want to save your CAD drawings in a central location, have more than one person access the same drawings, or just want to be completely independent of the internet. Otherwise you can just use the website for [Layerling](https://layerling.com/). It does all the same things, but all your drawings will save inside of your browser.
+
 Community-maintained Docker template for [Layerling](https://layerling.com/).
 The application and image come from [henmedia/layerling](https://github.com/henmedia/layerling).
 This repository supplies installation metadata and does not build the image.
+
+Easy 3D CAD for 3D printing
+
+Drop a shape, cut a hole, round an edge, print it. In your browser, with no account and no CAD background. &#13;
+
+Who It Is For;
+You own a 3D printer. You want a part that fits something, not a career in CAD. layerling works the way you already think: put a shape on the plate, drag it to size, turn a second shape into a hole, group the two, export, print. There is nothing to learn before you start and nothing to sign up for open the page and build. Your designs stay in your own browser: no account, no cloud, nothing uploaded anywhere.
+
+Coming From Tinkercad?
+layerling sits a step beyond Tinkercad towards Fusion 360: it is operated the same way, so you will recognize everything the plate, the shapes, solids and holes, group and ungroup, bundle, Alt-drag for a copy but it does not stop where Tinkercad does. Things you have been missing are waiting for you.
 
 ## Installation settings
 
@@ -20,6 +37,7 @@ variables: the upstream image does not document support for them.
 
 Open **On the server** in Layerling to save shared designs. Designs saved in
 the browser remain browser-local until moved. Back up the host projects folder.
+
 
 ## Thumbnail storage
 
