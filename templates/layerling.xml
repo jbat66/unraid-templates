@@ -27,6 +27,10 @@
   <License>AGPL-3.0</License>
   <!-- Run as Unraid nobody:users so a normal writable appdata folder can be used. -->
   <ExtraParams>--user=99:100</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DonateText/>
+  <DonateLink/>
   <Config Name="WebUI Port" Target="3000" Default="3000" Mode="tcp" Description="Host port for the Layerling web interface. Change if already in use." Type="Port" Display="always" Required="true" Mask="false">3000</Config>
   <Config Name="Shared Projects" Target="/shared-projects" Default="/mnt/user/appdata/layerling/projects" Mode="rw" Description="Persistent server-saved designs. This host directory must be writable by UID 99 and GID 100. Browser-only designs are stored separately in each browser." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/layerling/projects</Config>
   <Config Name="Shared Projects Container Directory" Target="LAYERLING_SHARED_PROJECTS_DIR" Default="/shared-projects" Description="Must match the container path of the Shared Projects mapping. Normally leave unchanged." Type="Variable" Display="always" Required="true" Mask="false">/shared-projects</Config>
@@ -34,6 +38,7 @@
   <Config Name="Layerling MCP Remote" Target="LAYERLING_MCP_REMOTE" Default="false" Mode="" Description="Turn on MCP for use with an AI Agent like Claude or Codex" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
   <Config Name="Layerling MCP Token" Target="LAYERLING_MCP_TOKEN" Default="" Mode="" Description="REPLACE_WITH_A_RANDOM_SECRET_AT_LEAST_16_CHARACTERS" Type="Variable" Display="advanced" Required="false" Mask="false">xxxxxxxxxxxxxxxxxxxxxxxxx</Config>
   <Config Name="Layerling MCP Allowed Hosts" Target="LAYERLING_MCP_ALLOWED_HOSTS" Default="" Mode="" Description="add in the host names that are hosting your local Layerling program, in this case your UNRAID host name." Type="Variable" Display="advanced" Required="false" Mask="false">servername.local</Config>
+  <TailscaleStateDir/>
 </Container>
 
 
