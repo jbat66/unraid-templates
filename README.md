@@ -1,4 +1,39 @@
-# Layerling for Unraid
+# jbat66's Unraid templates
+
+Community Applications templates for Layerling and Prusa Print Monitor. This repository supplies the installation templates; application code and Docker images remain in their respective projects.
+
+| Application | Template | Application / documentation | Support |
+| --- | --- | --- | --- |
+| Prusa Print Monitor | [prusa-print-monitor.xml](templates/prusa-print-monitor.xml) | [Prusa-Print-Monitor](https://github.com/jbat66/Prusa-Print-Monitor) | [Support discussion](https://github.com/jbat66/Prusa-Print-Monitor/discussions/1) |
+| Layerling | [layerling.xml](templates/layerling.xml) | [henmedia/layerling](https://github.com/henmedia/layerling) | [Template issues](https://github.com/jbat66/unraid-templates/issues) |
+
+## Community Apps submission
+
+Use this existing repository (`https://github.com/jbat66/unraid-templates`) in the [Community Apps submission portal](https://ca.unraid.net/submissions). Validate and scan it to pick up new or updated templates; do not register the application code repository as a second template repository. The root `ca_profile.xml` describes both applications and `LICENSE` contains the template repository license.
+
+The Prusa template's canonical URL is:
+
+```text
+https://raw.githubusercontent.com/jbat66/unraid-templates/main/templates/prusa-print-monitor.xml
+```
+
+Run `python tools/validate_templates.py` before pushing template changes. GitHub Actions runs the same validation automatically.
+
+## Prusa Print Monitor
+
+A PrusaLink printer dashboard with status, remaining time, filament-change countdowns, optional sound alerts and optional RTSP/HTTP camera viewing. The [application README](https://github.com/jbat66/Prusa-Print-Monitor#readme) covers printer credentials, all settings, sound setup and upgrades.
+
+- Image: `ghcr.io/jbat66/prusa-print-monitor:latest`.
+- Default web interface: `http://YOUR_UNRAID_IP:8085` (container port 8085).
+- Replace the example printer IP and `PUT-KEY-HERE` before starting; the default Digest username is `maker`.
+- Sounds Folder: `/mnt/user/appdata/prusa-print-monitor/sounds` mounted writable at `/sounds`.
+- Sound File: `/mnt/user/appdata/prusa-print-monitor/sounds/AlarmSoundEffect.mp3`; four bundled MP3s are installed when missing, preserving existing files.
+- Alerts and camera access default to disabled. Enable them in the template when wanted, then use the dashboard controls.
+- The service runs as UID 10001 after the startup helper installs missing sound files. It has no login and is intended for a trusted LAN.
+
+To install manually, save the [raw Prusa template](https://raw.githubusercontent.com/jbat66/unraid-templates/main/templates/prusa-print-monitor.xml) on UNRAID as `/boot/config/plugins/dockerMan/templates-user/my-prusa-print-monitor.xml`, then select it under **Docker → Add Container**. Existing users can keep the same container, image and settings; this migration only changes where the template is maintained. Re-download the canonical template when installing with the new location.
+
+## Layerling for Unraid
 
 <p align="center">
   <img src="docs/media/screenshot-en.png" width="763" alt="layerling in the browser">

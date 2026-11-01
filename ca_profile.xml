@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <CommunityApplications>
-  <Profile>Community-maintained Unraid Docker template for Layerling, a browser-based CAD application for 3D printing. Report Unraid template and installation issues in this repository. The Layerling application and Docker image are maintained by the upstream project at https://github.com/henmedia/layerling.</Profile>
+  <Profile>Unraid Docker templates maintained by jbat66. Layerling is a browser-based CAD application for 3D printing; its application and image are maintained by the upstream project at https://github.com/henmedia/layerling. Prusa Print Monitor is a PrusaLink printer dashboard for desktops, phones and room displays, with status alerts and an optional live camera. Report template and installation issues in this repository; application-specific support links are included in each template.</Profile>
   <WebPage>https://github.com/jbat66/unraid-templates</WebPage>
 </CommunityApplications>
